@@ -1,0 +1,42 @@
+{
+    "name": "d1258zz/lottery",
+    "description": " A Flarum extension that adds lottery to your discussions",
+    "license": "MIT",
+    "type": "flarum-extension",
+    "require": {
+        "flarum/core": "^1.3.0"
+    },
+    "authors": [
+        {
+            "name": "6666",
+            "email": "6@6.com",
+            "role": "?"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "D1258zz\\Lottery\\": "src/",
+            "D1258zz\\Lottery\\Migrations\\": "migrations/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Lottery",
+            "category": "discussion",
+            "icon": {
+                "name": "fas fa-gift",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://5.com"
+        },
+        "flarum-cli": {
+            "modules": {
+                "githubActions": true,
+                "backendTesting": true
+            }
+        }
+    }
+}
